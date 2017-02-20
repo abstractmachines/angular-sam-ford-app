@@ -1,0 +1,15 @@
+<!--
+file: work.html partial
+author: amanda falke 2016
+-->
+<div class="row">
+	<div ng-repeat="project in work">
+		<div class="work-thumb col-xs-6 col-sm-4 col-lg-2">
+
+			<a ui-sref="portfolio.project({ id: project.id})">
+				<img class="img-responsive" ng-src="{{project.image}}" alt="{{project.text}}">
+		 </a>
+
+		</div>
+	</div>
+</div>

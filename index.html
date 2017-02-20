@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="sfApp">
+	<head>
+		<title>Sam Ford Creations</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8">
+		<script src="dist/app.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<nav class="navbar navbar-default navbar-inverse" role="navigation">
+
+			<div class="navbar-inner">
+
+				<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle"
+						ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="#/">Sam Ford Creations</a>
+				</div>
+
+				<div class="collapse navbar-collapse"
+					uib-collapse="navCollapsed" ng-class="{'in':!navCollapsed}">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a ui-sref="home"><i class="fa"></i></a></li>
+						<li class="hidden-xs"><a ui-sref="gallery"><i class="fa"></i>Gallery</a></li>
+						<li><a ui-sref="work"><i class="fa"></i>Work</a></li>
+						<li><a ui-sref="about"><i class="fa"></i>About</a></li>
+					</ul>
+				</div>
+
+				</div> <!-- container -->
+			</div> <!-- navbar-inner -->
+
+			</nav>
+		</header>
+
+		<div class="container-fluid">
+			<div ui-view></div>
+		</div>
+
+	 </body>
+</html>

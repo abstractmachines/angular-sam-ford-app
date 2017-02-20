@@ -1,0 +1,54 @@
+{
+	"name": "sam-ford-angular-app",
+	"version": "1.0.0",
+	"description": "An AngularJS web app for Sam Ford, written by Amanda Falke.",
+	"main": "app.js",
+	"scripts": {
+		"build": "webpack --config webpack.config.js && cp index.html dist/index.html",
+		"clean": "rm -rf ./dist/*",
+		"installdevdeps": "npm install babel-cli babel-core babel-eslint babel-loader babel-preset-es2015 css-loader csslint eslint eslint-loader extract-text-webpack-plugin file-loader html-loader style-loader url-loader webpack webpack-dev-server --save-dev",
+		"dev": "webpack-dev-server --inline --hot",
+		"deploy": "./scpscript.sh",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/abstractmachines/sfApp.git"
+	},
+	"author": "a falke",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/abstractmachines/sfApp/issues"
+	},
+	"homepage": "https://github.com/abstractmachines/sfApp#readme",
+	"dependencies": {
+		"angular": "^1.5.0",
+		"angular-animate": "^1.5.0",
+		"angular-route": "^1.5.0",
+		"angular-touch": "^1.5.0",
+		"angular-ui-bootstrap": "^2.3.1",
+		"angular-ui-router": "^0.4.2",
+		"bootstrap": "^3.2.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.22.2",
+		"babel-core": "^6.22.1",
+		"babel-eslint": "^7.1.1",
+		"babel-loader": "^6.2.10",
+		"babel-preset-es2015": "^6.22.0",
+		"css-loader": "^0.26.1",
+		"csslint": "^0.10.0",
+		"csslint-loader": "^1.0.0",
+		"eslint": "^3.15.0",
+		"eslint-loader": "^1.6.1",
+		"extract-text-webpack-plugin": "^1.0.1",
+		"file-loader": "^0.9.0",
+		"html-loader": "^0.4.4",
+		"style-loader": "^0.13.1",
+		"url-loader": "^0.5.7",
+		"webpack": "^1.14.0",
+		"webpack-angular-injector-plugin": "^1.0.0",
+		"webpack-dev-server": "^1.16.2",
+		"webpack-uglify-js-plugin": "^1.1.9"
+	}
+}

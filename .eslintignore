@@ -1,0 +1,6 @@
+# ESLint ignores /node_modules/* and /bower_components/* by default
+
+js/ui-router.js
+js/ng-magnify.js
+js/ui-bootstrap-custom-tpls-2.3.1.js
+js/ui-bootstrap-custom-tpls-2.3.1.min.js

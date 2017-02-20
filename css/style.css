@@ -1,0 +1,225 @@
+/* Custom CSS by afalke for the sam ford app
+Custom CSS, and also extending bootstrap and magnify.
+
+Linted with Atom base linter linter-css.
+*/
+
+/* helper classes: for docs
+#just-like-bootstraps-img-responsive-class img {
+	max-width: 100%;
+	height: auto;
+	display:block;
+}
+*/
+
+/* as per angular ui bootstrap docs, add this:
+correcting issues between bootstrap empty href features:
+preventing unwanted angular route changes as a result of empty hrefs */
+.nav, .pagination, .carousel, .panel-title a {
+	cursor: pointer;
+}
+
+.navbar-collapse .in {
+	overflow-y: hidden;
+}
+/* ***** Globals ***** */
+html, body, .container, .container-fluid{
+   height:100%;
+}
+
+body {
+	background: #000;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+nav {
+	background: #000;
+	color: #fff;
+	z-index: 101; /* nav above carousel-control */
+}
+
+/*a, a:active, a:visited {
+	color: #191c22;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: gray;
+	text-decoration: underline;
+}*/
+
+.container-fluid {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	color: grey;
+	text-decoration: none;
+}
+
+/* ***** ngMagnify extensions ***** */
+
+img.magnify-image
+ {
+	width: 100%;
+}
+
+/* responsive */
+.portfolio-row img.magnify-image {
+	max-width: 100%;
+	height: auto;
+	display:block;
+}
+
+/* buttons over photos, behind nav (z-index 101)
+See more in breakpoints.
+*/
+a.carousel-control,
+a.carousel-control {
+	z-index: 100;
+}
+
+/* ***** WORK, a grid gallery. ***** */
+
+/* overridden in @media xs */
+.work-thumb,
+.work-thumb a,
+.work-thumb a img,
+.work-thumb a img:hover
+ {
+	opacity: 0.90;
+	margin: 0;
+	padding: 0;
+}
+
+/* grid image black borders */
+.work-thumb a img,
+.work-thumb a img:hover {
+	padding-left: 2px;
+	padding-bottom: 2px;
+	margin: 0;
+}
+
+.work-thumb a:hover,
+.work-thumb a img:hover{
+	opacity: 1.0;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-in;
+	animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-timing-function: ease-out;
+}
+
+/* ***** portfolio page, a UI Router state single portfolio piece page ***** */
+
+.suggested {
+	margin-bottom: 1em;
+}
+
+.read-more a img,
+.related-projects a img,
+.portfolio-row a img {
+	opacity: 0.80;
+}
+
+.read-more a img:hover,
+.related-projects a img:hover,
+.portfolio-row a img:hover {
+	opacity: 1.0;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-in;
+	animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-timing-function: ease-out;
+}
+
+/* ***** ABOUT page ***** */
+
+.about-container {
+	padding: 2em;
+}
+
+.about-container .row {
+	border-bottom:1px solid #ccc;
+}
+
+ul.project-types, ul.project-types li {
+	list-style-type: circle;
+	padding: 0;
+	padding-left: 1em;
+}
+
+.about-row a img {
+	opacity: 0.80;
+}
+
+.about-row a img:hover {
+	opacity: 1.0;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-in;
+	animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-timing-function: ease-out;
+}
+
+.pull-left {
+	margin-right: 10px;
+}
+
+/* ***** BREAKPOINTS ***** */
+
+/* xs */
+@media(max-width:768px) {
+	.row .galleryxs {
+		height: 100%;
+	}
+
+	.portfolio-row {
+		padding: 2em;
+	}
+
+	.work-thumb,
+	.work-thumb a,
+	.work-thumb a img,
+	.work-thumb a img:hover
+	 {
+		opacity: 1.0;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* sm */
+@media(min-width:768px){
+	.portfolio-row {
+		padding-left: 4em;
+		padding-right: 8em;
+	}
+}
+
+/* md */
+@media(min-width:992px){
+}
+
+/* lg */
+@media(min-width:1200px){
+}
+
+/* xl */
+@media(min-width:1600px){
+	.magnify-container .magnify-glass {
+		width: 650px;
+		height: 650px;
+}
+}

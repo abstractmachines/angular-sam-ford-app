@@ -1,0 +1,84 @@
+<div class="row portfolio-row">
+
+	<div ng-repeat="project in projects">
+		<div ng-if="project.id == id.id">
+
+		<div class="col-xs-12 visible-xs hidden-sm hidden-md hidden-lg">
+			<div data-ng-magnify data-glass-width="250" data-glass-height="250"
+			data-image-src="{{project.imagexs}}">
+			</div>
+		</div>
+
+		<div class="col-sm-6 hidden-xs visible-sm hidden-md hidden-lg">
+		 <div data-ng-magnify data-glass-width="300" data-glass-height="300"
+			 data-image-src="{{project.image}}">
+		 </div>
+	 </div>
+
+		<div class="col-md-6 hidden-xs hidden-sm visible-md hidden-lg">
+			<div data-ng-magnify data-glass-width="350" data-glass-height="350"
+			 data-image-src="{{project.image}}">
+			</div>
+		</div>
+
+		<div class="col-lg-6 hidden-xs hidden-sm hidden-md visible-lg">
+			<div data-ng-magnify data-glass-width="400" data-glass-height="400"
+			 data-image-src="{{project.image}}">
+			</div>
+		</div>
+
+		<div class="suggested col-xs-8 col-sm-4">
+			<h2> {{project.client}}</h2><h3 class=>{{project.title}}</h3>
+			<p class="lead">{{project.synopsis}}</p><p>{{project.description}}</p>
+
+
+					<h4> Suggested: </h4>
+
+
+			<div class="suggested col-xs-6 col-lg-4">
+			<a ng-href="/#/portfolio/{{project.relatedthumb1link}}">
+				<img class="img-responsive img-thumbnail" ng-src="{{project.relatedthumb1}}">
+			</a>
+		</div>
+
+		<div class="suggested col-xs-6 col-lg-4">
+			<a ng-href="/#/portfolio/{{project.relatedthumb2link}}">
+				<img class="img-responsive img-thumbnail" ng-src="{{project.relatedthumb2}}">
+			</a>
+		</div>
+
+
+		<div class="col-xs-6 col-lg-4">
+			<a ng-href="/#/portfolio/{{project.relatedthumb3link}}">
+				<img class="img-responsive img-thumbnail" ng-src="{{project.relatedthumb3}}">
+			</a>
+		</div>
+		</div>
+
+		<div class="pull-right col-xs-4 col-sm-2">
+			<h4 class="small read-more">Read more:</h4>
+
+				<a ng-href="{{project.link}}"	alt="sam ford client site" target="_blank">
+				<img class="img-responsive img-thumbnail" ng-src="{{project.linkImage}}"></a>
+			</p>
+		</div>
+
+<hr />
+
+
+	</div> <!-- ng-if -->
+</div> <!-- ng-repeat -->
+
+	<div ui-view></div>
+
+</div> <!-- row -->
+
+	<div class="carousel-portfolio">
+		<!-- Carousel controls -->
+		<a class="carousel-control left" ng-href="/#/portfolio/{{id.prev}}" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="carousel-control right" ng-href="/#/portfolio/{{id.next}}" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>

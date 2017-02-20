@@ -1,0 +1,40 @@
+<!--
+file: gallery.html partial
+author: amanda falke 2016
+-->
+<div class="row">
+	<div class="carouselImageResponsive col-xs-12">
+		<div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+			<div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id"
+							 ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()">
+
+				<div carousel-caption> {{slide.text}}</div>
+
+				<div class="gallery-xs visible-xs hidden-sm hidden-md hidden-lg">
+					<div data-ng-magnify data-glass-width="250" data-glass-height="250"
+					 data-image-src="{{slide.imagexs}}">
+					</div>
+				</div>
+
+				<div class="hidden-xs visible-sm hidden-md hidden-lg">
+				 <div data-ng-magnify data-glass-width="300" data-glass-height="300"
+					 data-image-src="{{slide.image}}">
+				 </div>
+			 </div>
+
+				<div class="hidden-xs hidden-sm visible-md hidden-lg">
+					<div data-ng-magnify data-glass-width="350" data-glass-height="350"
+					 data-image-src="{{slide.image}}">
+					</div>
+				</div>
+
+				<div class="hidden-xs hidden-sm hidden-md visible-lg">
+					<div data-ng-magnify data-glass-width="400" data-glass-height="400"
+					 data-image-src="{{slide.image}}">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
