@@ -11,7 +11,7 @@ Atom (ESLint, bootstrap boot-lint, css-lint), git, nginx, Photoshop.
 > • Style guides / guidelines: Airbnb, Pete Hunt
 
 
-### Responsive design:
+### Responsive design (mobile first):
 
 ### Mobile:
 
@@ -30,6 +30,8 @@ Atom (ESLint, bootstrap boot-lint, css-lint), git, nginx, Photoshop.
 ### Desktop:
 
 ![Bootstrap classes for desktops](/readmeimg/gallery-large.jpg "Gallery, desktop")
+
+![Bootstrap classes for desktops](/readmeimg/work-large-medium.jpg "Gallery, desktop")
 
 ![Bootstrap classes for desktops](/readmeimg/portfolio-large.jpg "Portfolio, desktop")
 
