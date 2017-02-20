@@ -31,6 +31,6 @@ Atom (ESLint, bootstrap boot-lint, css-lint), git, nginx, Photoshop.
 
 ![Bootstrap classes for desktops](/readmeimg/gallery-large.jpg "Gallery, desktop")
 
-![Bootstrap classes for desktops](/readmeimg/portfolio-large-medium.jpg "Portfolio, desktop")
+![Bootstrap classes for desktops](/readmeimg/portfolio-large.jpg "Portfolio, desktop")
 
 ![Bootstrap classes for desktops](/readmeimg/about-large.jpg "About, desktop")
