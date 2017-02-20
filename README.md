@@ -12,6 +12,9 @@ Atom (ESLint, bootstrap boot-lint, css-lint), git, nginx, Photoshop.
 
 
 ### Responsive design:
+
+### Mobile:
+
 ![Bootstrap classes for mobile](/readmeimg/gallery-mobile.jpg "Gallery, mobile")
 
 ![Bootstrap classes for mobile](/readmeimg/work-mobile.jpg "Work, mobile")
@@ -19,13 +22,13 @@ Atom (ESLint, bootstrap boot-lint, css-lint), git, nginx, Photoshop.
 ![Bootstrap classes for mobile](/readmeimg/portfolio-mobile.jpg "Portfolio, mobile")
 
 
-#### Desktops:
+### Tablet:
+
 ![Bootstrap classes for tablets](/readmeimg/work-tablet.jpg "Work, tablet")
 
-... and more.
 
+### Desktop:
 
-#### Desktops:
 ![Bootstrap classes for desktops](/readmeimg/gallery-large.jpg "Gallery, desktop")
 
 ![Bootstrap classes for desktops](/readmeimg/portfolio-large-medium.jpg "Portfolio, desktop")
