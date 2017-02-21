@@ -13,9 +13,9 @@ Design + Code: Amanda Falke (2016)
 I've written and delivered a performant AngularJS app for a visual artist,
 where both image quality and fast speeds (particularly on mobile) were a primary
 concern. For this reason, detail-oriented image compression techniques were
-used (Google pagespeed), nginx was chosen for the server as nginx is more
-performant than Apache is, and file compression with UglifyJS for Webpack was
-also used. I also used Photoshop's image compression functionalities.
+used (UglifyJS, Google pagespeed, Photoshop), nginx was chosen for the server
+over Apache, and gzip techniques were also used. As many techniques as possible
+were used to avoid FOUC (Flash of Unstyled Content).
 
 Using existing technologies and best practices such as Angular-UI Bootstrap carousel, typography, bootstrap classes, the ngMagnify directive, UI-Router, and other
 open source software too,
