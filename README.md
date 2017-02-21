@@ -1,4 +1,9 @@
 # Angular ES6 Webpack app
+
+[![npm used](https://img.shields.io/npm/dm/localeval.svg?style=flat)](https://www.npmjs.com/)
+
+[![apm](https://img.shields.io/apm/v/vim-mode.svg?style=flat)](https://github.com/atom/apm)
+
 ## Made with:
 > • ES6, Babel, Node, Webpack, AngularJS, UI-Router, ESLint, UglifyJS,
 Atom (ESLint, bootstrap boot-lint, css-lint), git, nginx, Photoshop.
