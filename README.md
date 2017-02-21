@@ -53,3 +53,7 @@ Everything else in this project is open source.
 ![Bootstrap classes for desktops](/readmeimg/portfolio-large.jpg "Portfolio, desktop")
 
 ![Bootstrap classes for desktops](/readmeimg/about-large.jpg "About, desktop")
+
+
+Noted bug: Chrome on Windows: opening up a new tab stops navigation
+with Angular-UI Bootstrap Carousel (something I didn't build! ha)
