@@ -41,9 +41,10 @@ open source software too,
 I wrote custom JavaScript logic for models, nested views, routes.
 
 My code:
-> webpack configuration file, app.js, index.html, all of the JavaScript ui-router \
-routes, Angular directives and controllers in js/, and all of the html partials
-in pages/
+> webpack configuration file, app.js ES6 imports and logic,
+index.html bootstrap responsive classes, all of the JavaScript ui-router
+routes and logic, Angular directives and controllers in js/, and all of the html
+ partials in pages/.
 
 Everything else in this project is open source.
 
