@@ -13,19 +13,18 @@ Design + Code: Amanda Falke (2016)
 I've written and delivered a performant AngularJS app for a visual artist,
 where both image quality and fast speeds (particularly on mobile) were a primary
 concern. For this reason, detail-oriented image compression techniques were
-used (Google pagespeed), nginx was chosen for the server (gzip), and file
-compression with UglifyJS for Webpack was also used.
+used (Google pagespeed), nginx was chosen for the server as nginx is more
+performant than Apache is, and file compression with UglifyJS for Webpack was
+also used. I also used Photoshop's image compression functionalities.
 
 Using existing technologies and best practices such as Angular-UI Bootstrap carousel, typography, bootstrap classes, the ngMagnify directive, UI-Router, and other
 open source software too,
 
 I wrote custom JavaScript logic for models, nested views, routes.
 My code:
-> webpack configuration file
-app.js
-index.html
-all of the JavaScript ui-router routes, Angular directives and controllers in js/
-all of the html partials in pages/
+> webpack configuration file, app.js, index.html, all of the JavaScript ui-router \
+routes, Angular directives and controllers in js/, and all of the html partials
+in pages/
 
 Everything else in this project is open source.
 
