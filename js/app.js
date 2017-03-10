@@ -9,8 +9,6 @@ import angular from "angular";
 
 import "angular-ui-router";
 
-import galleryDirective from "../js/gallery-directive.js";
-import workDirective from "../js/work-directive.js";
 import aboutTemplate from "../js/about-directive.js";
 
 import uiRouter from "../js/ui-router.js";
@@ -40,9 +38,5 @@ angular.module("sfApp")
 angular.module("sfApp")
 	.controller("PortfolioCtrl",PortfolioCtrl);
 
-angular.module("sfApp")
-	.directive("galleryDirective",galleryDirective);
-angular.module("sfApp")
-	.directive("workDirective",workDirective);
 angular.module("sfApp")
 	.directive("aboutTemplate",aboutTemplate);

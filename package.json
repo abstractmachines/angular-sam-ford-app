@@ -1,7 +1,7 @@
 {
   "name": "sam-ford-angular-app",
   "version": "1.0.0",
-  "description": "An AngularJS web app for Sam Ford, written by Amanda Falke.",
+  "description": "An Angular web app created by Amanda Falke in Portland Oregon.",
   "main": "app.js",
   "scripts": {
     "build": "webpack --config webpack.config.js && cp index.html dist/index.html",

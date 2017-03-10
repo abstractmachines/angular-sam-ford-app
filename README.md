@@ -12,7 +12,7 @@ Atom (ESLint, bootstrap boot-lint, css-lint), git, nginx, Photoshop.
 
 A custom app for Sam Ford, an illustrator and artist.
 
-Design + Code: Amanda Falke
+Design + Code: Amanda Falke, Portland Oregon
 
 ## Background:
 ### A "performance-first, mobile-first" responsive design, hosted on nginx.
