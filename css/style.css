@@ -1,4 +1,4 @@
-/* Custom CSS by Amanda Falke for the sam ford app
+/* Custom CSS by afalke for the sam ford app
 Custom CSS, and also extending bootstrap and magnify.
 
 Linted with Atom base linter linter-css.
@@ -227,7 +227,7 @@ ul.project-types, ul.project-types li {
 footer {
 	background: #000;
 	color:#ddd;
-	margin-top: 0;
+	margin-top: 1em;
 	z-index:3;
 }
 
@@ -237,4 +237,9 @@ footer a {
 
 footer a:hover {
 	color:#fff;
+}
+
+a.tiny, a.tiny:visited {
+	font-size: 60%;
+	color: #ddd;
 }

@@ -1,7 +1,3 @@
-<!--
-file: workportfolio.html partial
-author: amanda falke
--->
 <div class="row portfolio-row">
 
 	<div ng-repeat="project in projects">
@@ -31,13 +27,11 @@ author: amanda falke
 			</div>
 		</div>
 
-		<div class="suggested col-xs-8 col-sm-4">
+		<div class="suggested col-xs-12 col-sm-4">
 			<h2> {{project.client}}</h2><h3 class=>{{project.title}}</h3>
 			<p class="lead">{{project.synopsis}}</p><p>{{project.description}}</p>
 
-
-					<h4> Suggested: </h4>
-
+			<h4> Suggested: </h4>
 
 			<div class="suggested col-xs-6 col-lg-4">
 			<a ng-href="/#/portfolio/{{project.relatedthumb1link}}">
@@ -52,21 +46,28 @@ author: amanda falke
 		</div>
 
 
-		<div class="col-xs-6 col-lg-4">
+		<div class="suggested col-xs-6 col-lg-4">
 			<a ng-href="/#/portfolio/{{project.relatedthumb3link}}">
 				<img class="img-responsive img-thumbnail" ng-src="{{project.relatedthumb3}}">
 			</a>
 		</div>
 		</div>
 
-		<div class="pull-right col-xs-4 col-sm-2">
+		<div class="pull-right col-sm-2 hidden-xs visible-sm visible-md visible-lg">
 			<h4 class="small read-more">Read more:</h4>
-
 				<a ng-href="{{project.link}}"	alt="sam ford client site" target="_blank">
 				<img class="img-responsive img-thumbnail" ng-src="{{project.linkImage}}"></a>
 			</p>
 		</div>
 
+		<div class="pull-right suggested col-xs-12
+			visible-xs hidden-sm hidden-md hidden-lg">
+			<h4 class="small read-more">Read more:
+				<a ng-href="{{project.link}}"	alt="sam ford client site" target="_blank">
+				<img class="img-responsive img-thumbnail" ng-src="{{project.linkImage}}"></a>
+			</h4>
+			<br />
+		</div>
 <hr />
 
 
